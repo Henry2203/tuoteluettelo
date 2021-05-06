@@ -1,0 +1,36 @@
+body {
+    display: flex;
+    margin: 0;
+}
+
+.puhelimet,
+.search-sort {
+    display: flex;
+    flex-direction: column;
+}
+
+.search-sort {
+    margin: 10px 10px 10px 0;
+}
+
+.puhelin-yksilo {
+    border: 1px solid rgb(204, 204, 204);
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding: 0 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+.puhelin-yksilo img {
+    max-width: 100%;
+}
+
+.puhelin-yksilo h4 {
+    color: rgb(0, 89, 255);
+}
+
+.puhelin-kuva {
+    max-width: 200px;
+    min-width: 100px;
+}

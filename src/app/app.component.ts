@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { faCoffee } from '@fortawesome/free-solid-svg-icons';
-
+import puhelinData from 'src/assets/phones/phones.json';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -9,4 +9,5 @@ import { faCoffee } from '@fortawesome/free-solid-svg-icons';
 export class AppComponent {
   title = 'tuoteluettelo';
   faCoffee = faCoffee;
+  puhelimet: any = puhelinData;
 }
