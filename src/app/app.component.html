@@ -1,19 +1,17 @@
 <body>
     <div class="search-sort">
         <div class="search">
-            <label for="">Search:</label> <br>
-            <input type="text">
+            <label for="haku">Search:</label>
+            <input type="text" name="haku" (keyup)="haku($event)">
         </div>
-        <div class="sort-by">
-            <label for="">Sort by:</label> <br>
-            <select name="sort" id="sort">
-                <option value="newest">Newest</option>
-                <option value="oldest">Alphabetical</option>
-              </select>
-        </div>
+        <select (change)="suodatin($event)">
+            <option value="newest">Newest</option>
+            <option value="alphabetical">Alphabetical</option>
+          </select>
     </div>
     <div class="puhelimet">
-        <div class="puhelin-yksilo" *ngFor="let puhelin of puhelimet">
+        <div class="puhelin-yksilo" *ngFor="let puhelin of puhelimet" ng-options="item.id as item.value for items in data.month | orderBy:'id'">
+
             <div class="puhelin-kuva">
                 <figure>
                     <img src="../assets/{{ puhelin.imageUrl }}" alt="">
@@ -23,6 +21,7 @@
                 <h4>{{ puhelin.name }}</h4>
                 <p>{{puhelin.snippet}}</p>
             </div>
+
         </div>
 
     </div>
