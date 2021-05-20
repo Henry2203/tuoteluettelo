@@ -1,0 +1,18 @@
+{
+  "targets": {
+    "tuoteluettelo-badfe": {
+      "hosting": {
+        "tuoteluettelo": [
+          "tuoteluettelo-badfe"
+        ]
+      }
+    },
+    "tuoteluettelo-4603e": {
+      "hosting": {
+        "tuoteluettelo": [
+          "tuoteluettelo-4603e"
+        ]
+      }
+    }
+  }
+}
