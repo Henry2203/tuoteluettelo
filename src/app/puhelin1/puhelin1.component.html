@@ -3,16 +3,16 @@
         <div class="oikea">
             <p class="nimi">{{ nimi }}</p>
             <p> {{ description }} </p>
-            <img class="isokuva" src="../assets/{{ isokuva }}" alt="">
+            <img class="isokuva" src="assets/{{ isokuva }}" alt="">
 
             <div class="kuvat">
                 <figure *ngFor="let kuva of kuvat">
-                    <img src="../assets/{{ kuva }}" alt="">
+                    <img src="assets/{{ kuva }}" alt="">
                 </figure>
             </div>
         </div>
         <div class="vasen">
-            <img src="../assets/{{ isokuva }}" alt="">
+            <img src="assets/{{ isokuva }}" alt="">
         </div>
     </div>
     <div class="ala-osa">
